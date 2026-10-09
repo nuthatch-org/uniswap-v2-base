@@ -1,6 +1,6 @@
 # uniswap-v2-base
 
-A [nuthatch](https://github.com/nightswatchhq/nuthatch) nest: **Uniswap V2 on Base**.
+A [nuthatch](https://github.com/nuthatch-org/nuthatch) nest: **Uniswap V2 on Base**.
 
 As `uniswap-v2`, re-pointed at Base. The busiest of the three.
 
@@ -25,7 +25,7 @@ Indexed blocks **50,095,517 to 50,314,928** and sealed **173,065 events**. Every
 ## Run it
 
 ```sh
-nuthatch init --from https://github.com/nightswatchhq/uniswap-v2-base
+nuthatch init --from https://github.com/nuthatch-org/uniswap-v2-base
 cd uniswap-v2-base
 nuthatch dev --dir . --backfill 50000 --seal-direct
 nuthatch sql --dir . "SELECT count(*) FROM \"factory__pair_created\""
